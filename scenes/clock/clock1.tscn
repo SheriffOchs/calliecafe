@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://d317qe0mdjbn8"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_7uowx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r7o5l"]
+size = Vector2(118, 78)
+
+[node name="Clock" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+rotation = 1.5708
+scale = Vector2(80, 120)
+texture = SubResource("CanvasTexture_7uowx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_r7o5l")
+
+[node name="Label" type="HSplitContainer" parent="."]
+offset_left = -60.0
+offset_top = -40.0
+offset_right = 59.0
+offset_bottom = 40.0
+
+[node name="Minute" type="RichTextLabel" parent="Label"]
+layout_mode = 2
+text = "15"
+
+[node name="Hour" type="RichTextLabel" parent="Label"]
+layout_mode = 2
+text = "9"
