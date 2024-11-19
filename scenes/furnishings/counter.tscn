@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnklys4vgl5tf"]
+
+[ext_resource type="Texture2D" uid="uid://cctjbcfqohcg8" path="res://tilemap_packed.png" id="1_15pui"]
+
+[node name="CounterControl" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 317.0
+offset_bottom = 89.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 633.0
+offset_bottom = 278.0
+texture = ExtResource("1_15pui")
+region_rect = Rect2(273.916, 65.3615, 44.723, 19.2772)

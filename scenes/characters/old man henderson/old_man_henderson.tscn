@@ -1,0 +1,89 @@
+[gd_scene load_steps=11 format=3 uid="uid://bhljy5nhb62gm"]
+
+[ext_resource type="Texture2D" uid="uid://bsn6rt7p2dlbs" path="res://scenes/parts/redShirt7.png" id="1_k5sl2"]
+[ext_resource type="Texture2D" uid="uid://iwimddes6kuw" path="res://scenes/parts/redArm_long.png" id="2_p8i05"]
+[ext_resource type="Texture2D" uid="uid://c45l88mn7xw15" path="res://scenes/parts/tint4_hand.png" id="3_uhi3b"]
+[ext_resource type="Texture2D" uid="uid://bclfjx7uo2706" path="res://scenes/parts/tint4_neck.png" id="4_f0dtr"]
+[ext_resource type="Texture2D" uid="uid://dp3b4bm2il1f7" path="res://scenes/parts/tint4_head.png" id="5_lc4eq"]
+[ext_resource type="Texture2D" uid="uid://bttfktoyjwja6" path="res://scenes/parts/face3.png" id="6_d2lnf"]
+[ext_resource type="Texture2D" uid="uid://b54wgnfocn7g7" path="res://scenes/parts/whiteMan8.png" id="7_y6cun"]
+[ext_resource type="Texture2D" uid="uid://ca0r88uh17cxp" path="res://scenes/parts/pantsLightBlue1.png" id="8_8ss3f"]
+[ext_resource type="Texture2D" uid="uid://dixrfbn2paw6k" path="res://scenes/parts/pantsLightBlue_long.png" id="9_jpv2r"]
+[ext_resource type="Texture2D" uid="uid://b8qqcqqsx2qhx" path="res://scenes/parts/blackShoe3.png" id="10_amwsk"]
+
+[node name="OldManHenderson" type="Node2D"]
+
+[node name="Shirt" type="Sprite2D" parent="."]
+z_index = 2
+texture = ExtResource("1_k5sl2")
+
+[node name="LArm" type="Sprite2D" parent="Shirt"]
+z_index = -1
+position = Vector2(126, 0)
+texture = ExtResource("2_p8i05")
+
+[node name="LHand" type="Sprite2D" parent="Shirt/LArm"]
+z_index = -1
+position = Vector2(80, 69)
+rotation = 1.0472
+texture = ExtResource("3_uhi3b")
+
+[node name="RArm" type="Sprite2D" parent="Shirt"]
+z_index = -1
+position = Vector2(-132, 0)
+rotation = -6.28319
+texture = ExtResource("2_p8i05")
+flip_h = true
+
+[node name="RHand" type="Sprite2D" parent="Shirt/RArm"]
+z_index = -1
+position = Vector2(-82, 61)
+rotation = -3.66519
+texture = ExtResource("3_uhi3b")
+
+[node name="Neck" type="Sprite2D" parent="Shirt"]
+z_as_relative = false
+position = Vector2(0, -74)
+texture = ExtResource("4_f0dtr")
+
+[node name="Head" type="Sprite2D" parent="Shirt/Neck"]
+position = Vector2(0, -95)
+texture = ExtResource("5_lc4eq")
+
+[node name="Face" type="Sprite2D" parent="Shirt/Neck/Head"]
+position = Vector2(0, 2)
+texture = ExtResource("6_d2lnf")
+
+[node name="Hair" type="Sprite2D" parent="Shirt/Neck/Head"]
+position = Vector2(1.74999, -30)
+scale = Vector2(1.04114, 1.28191)
+texture = ExtResource("7_y6cun")
+
+[node name="Pants" type="Sprite2D" parent="Shirt"]
+z_index = 1
+position = Vector2(0, 87)
+texture = ExtResource("8_8ss3f")
+
+[node name="LLeg" type="Sprite2D" parent="Shirt/Pants"]
+z_as_relative = false
+position = Vector2(54, 76)
+texture = ExtResource("9_jpv2r")
+
+[node name="LShoe" type="Sprite2D" parent="Shirt/Pants/LLeg"]
+z_index = -1
+z_as_relative = false
+position = Vector2(38, 91)
+texture = ExtResource("10_amwsk")
+
+[node name="RLeg" type="Sprite2D" parent="Shirt/Pants"]
+z_as_relative = false
+position = Vector2(-52, 76)
+texture = ExtResource("9_jpv2r")
+flip_h = true
+
+[node name="LShoe" type="Sprite2D" parent="."]
+z_index = -1
+z_as_relative = false
+position = Vector2(-86, 258)
+texture = ExtResource("10_amwsk")
+flip_h = true
