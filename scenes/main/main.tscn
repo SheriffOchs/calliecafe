@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://47mlt880wrj7"]
+[gd_scene load_steps=5 format=3 uid="uid://47mlt880wrj7"]
 
 [ext_resource type="PackedScene" uid="uid://bf1wtffc2bem8" path="res://scenes/clock/clock2.tscn" id="1_1a7fc"]
 [ext_resource type="PackedScene" uid="uid://bhljy5nhb62gm" path="res://scenes/characters/old man henderson/old_man_henderson.tscn" id="2_7tk8t"]
 [ext_resource type="PackedScene" uid="uid://bnklys4vgl5tf" path="res://scenes/furnishings/counter.tscn" id="3_373gj"]
+[ext_resource type="PackedScene" uid="uid://c4qmf7qfymk0o" path="res://scenes/cafe ingredients/cups.tscn" id="4_3rju6"]
 
 [node name="main" type="Node2D"]
 
@@ -16,8 +17,11 @@ offset_bottom = 154.0
 position = Vector2(976, 370)
 
 [node name="CounterControl" parent="." instance=ExtResource("3_373gj")]
-z_index = 5
+z_index = 2
 offset_left = 700.0
 offset_top = 475.0
 offset_right = 1332.0
 offset_bottom = 752.0
+
+[node name="Cups" parent="." instance=ExtResource("4_3rju6")]
+position = Vector2(79, 395)
