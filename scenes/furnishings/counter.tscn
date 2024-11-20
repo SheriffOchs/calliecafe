@@ -5,8 +5,8 @@
 [node name="CounterControl" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 317.0
-offset_bottom = 89.0
+offset_right = 635.0
+offset_bottom = 279.0
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0

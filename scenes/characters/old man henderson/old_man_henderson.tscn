@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c45l88mn7xw15" path="res://scenes/parts/tint4_hand.png" id="3_uhi3b"]
 [ext_resource type="Texture2D" uid="uid://bclfjx7uo2706" path="res://scenes/parts/tint4_neck.png" id="4_f0dtr"]
 [ext_resource type="Texture2D" uid="uid://dp3b4bm2il1f7" path="res://scenes/parts/tint4_head.png" id="5_lc4eq"]
-[ext_resource type="Texture2D" uid="uid://bttfktoyjwja6" path="res://scenes/parts/face3.png" id="6_d2lnf"]
+[ext_resource type="Texture2D" uid="uid://ctxgmm315ybng" path="res://scenes/parts/face3.png" id="6_d2lnf"]
 [ext_resource type="Texture2D" uid="uid://b54wgnfocn7g7" path="res://scenes/parts/whiteMan8.png" id="7_y6cun"]
 [ext_resource type="Texture2D" uid="uid://ca0r88uh17cxp" path="res://scenes/parts/pantsLightBlue1.png" id="8_8ss3f"]
 [ext_resource type="Texture2D" uid="uid://dixrfbn2paw6k" path="res://scenes/parts/pantsLightBlue_long.png" id="9_jpv2r"]
